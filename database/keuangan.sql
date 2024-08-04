@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 22, 2022 at 09:01 AM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 7.3.33
+-- Host: 127.0.0.1:3307
+-- Generation Time: Aug 04, 2024 at 06:34 PM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 5.6.40
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `keuangan`
+-- Database: `webkeuangan_aziz`
 --
 
 -- --------------------------------------------------------
@@ -125,27 +126,9 @@ CREATE TABLE `pemasukan` (
 --
 
 INSERT INTO `pemasukan` (`id_pemasukan`, `tgl_pemasukan`, `jumlah`, `id_sumber`) VALUES
-(1, '2022-07-06', 5500000, 1),
-(2, '2022-07-09', 7500000, 5),
-(3, '2022-07-25', 8500000, 5),
-(4, '2022-08-30', 550000, 3),
-(5, '2022-08-02', 5700000, 5),
-(6, '2022-08-04', 35500000, 1),
-(7, '2022-08-06', 75800000, 1),
-(8, '2022-08-06', 540000, 2),
-(9, '2022-08-07', 760000, 4),
-(10, '2022-08-09', 800000, 3),
-(11, '2022-08-10', 8500000, 5),
-(12, '2022-08-10', 800000, 3),
-(13, '2022-08-13', 15000000, 1),
-(14, '2022-08-15', 35000000, 1),
-(15, '2022-08-16', 760000, 2),
-(16, '2022-08-17', 8000000, 5),
-(17, '2022-08-18', 2500000, 3),
-(18, '2022-08-19', 550000, 4),
-(19, '2022-08-20', 250000, 2),
-(20, '2022-08-20', 250000, 2),
-(21, '2022-08-21', 4500000, 5);
+(50, '2024-08-04', 50000, 2),
+(51, '2024-08-04', 5000, 1),
+(52, '2024-08-04', 10000, 1);
 
 -- --------------------------------------------------------
 
@@ -166,32 +149,45 @@ CREATE TABLE `pengeluaran` (
 -- Dumping data for table `pengeluaran`
 --
 
-INSERT INTO `pengeluaran` (`id_pengeluaran`, `tgl_pengeluaran`, `jumlah`, `id_sumber`) VALUES
-(1, '2022-07-15', 7500000, 6),
-(2, '2022-07-16', 25000000, 7),
-(3, '2022-07-11', 5500000, 8),
-(4, '2022-07-12', 250000, 9),
-(5, '2022-08-15', 750000, 10),
-(6, '2022-08-17', 435000, 8),
-(7, '2022-08-19', 253000, 9),
-(8, '2022-08-18', 750000, 10);
+INSERT INTO `pengeluaran` (`id_pengeluaran`, `tgl_pengeluaran`, `nama_pengeluaran`, `nomor_faktur`, `jumlah`, `id_sumber`) VALUES
+(32, '2024-08-04', '', '', 45000, 1),
+(34, '2024-08-04', '', '', 4000, 8);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sumber`
+-- Table structure for table `sumber_pendapatan`
 --
 
-CREATE TABLE `sumber` (
+CREATE TABLE `sumber_pendapatan` (
+  `id_sumber` int(11) NOT NULL,
+  `nama` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `sumber_pendapatan`
+--
+
+INSERT INTO `sumber_pendapatan` (`id_sumber`, `nama`) VALUES
+(1, 'Transfer'),
+(2, 'Cash');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sumber_pengeluaran`
+--
+
+CREATE TABLE `sumber_pengeluaran` (
   `id_sumber` int(11) NOT NULL,
   `nama` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `sumber`
+-- Dumping data for table `sumber_pengeluaran`
 --
 
-INSERT INTO `sumber` (`id_sumber`, `nama`) VALUES
+INSERT INTO `sumber_pengeluaran` (`id_sumber`, `nama`) VALUES
 (1, 'Buat Web Pemerintah'),
 (2, 'Desain Poster Lomba'),
 (3, 'Instalasi Softwre'),
@@ -268,9 +264,15 @@ ALTER TABLE `pengeluaran`
   ADD KEY `id_sumber` (`id_sumber`);
 
 --
--- Indexes for table `sumber`
+-- Indexes for table `sumber_pendapatan`
 --
-ALTER TABLE `sumber`
+ALTER TABLE `sumber_pendapatan`
+  ADD PRIMARY KEY (`id_sumber`);
+
+--
+-- Indexes for table `sumber_pengeluaran`
+--
+ALTER TABLE `sumber_pengeluaran`
   ADD PRIMARY KEY (`id_sumber`);
 
 --
@@ -311,18 +313,24 @@ ALTER TABLE `karyawan`
 -- AUTO_INCREMENT for table `pemasukan`
 --
 ALTER TABLE `pemasukan`
-  MODIFY `id_pemasukan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id_pemasukan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `pengeluaran`
 --
 ALTER TABLE `pengeluaran`
-  MODIFY `id_pengeluaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id_pengeluaran` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
--- AUTO_INCREMENT for table `sumber`
+-- AUTO_INCREMENT for table `sumber_pendapatan`
 --
-ALTER TABLE `sumber`
+ALTER TABLE `sumber_pendapatan`
+  MODIFY `id_sumber` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `sumber_pengeluaran`
+--
+ALTER TABLE `sumber_pengeluaran`
   MODIFY `id_sumber` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --

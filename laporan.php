@@ -26,94 +26,96 @@ require 'cek-sesi.php';
 
 <body id="page-top">
 
-<?php 
-require 'koneksi.php';
-require 'sidebar.php'; ?>
+  <?php
+  require 'koneksi.php';
+  require 'sidebar.php'; ?>
 
-      <!-- Main Content -->
-      <div id="content">
+  <!-- Main Content -->
+  <div id="content">
 
-<?php require 'navbar.php'; ?>
+    <?php require 'navbar.php'; ?>
 
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
 
-                   <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">Download Laporan</h6>
-            </div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>Nama</th>
-                      <th>Jumlah Transaksi </th>
-                      <th>Jumlah Total Uang</th>
-					  <th>Download</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                  </tfoot>
-                  <tbody>
-				  <?php 
-$pemasukan=mysqli_query($koneksi,"SELECT * FROM pemasukan");
-while ($masuk=mysqli_fetch_array($pemasukan)){
-$arraymasuk[] = $masuk['jumlah'];
-}
-$jumlahmasuk = array_sum($arraymasuk);
+      <!-- DataTales Example -->
+      <div class="card shadow mb-4">
+        <div class="card-header py-3">
+          <h6 class="m-0 font-weight-bold text-primary">Download Laporan</h6>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Nama</th>
+                  <th>Jumlah Transaksi </th>
+                  <th>Jumlah Total Uang</th>
+                  <th>Download</th>
+                </tr>
+              </thead>
+              <tfoot>
+              </tfoot>
+              <tbody>
+                <?php
+                $pemasukan = mysqli_query($koneksi, "SELECT * FROM pemasukan");
+                $arraymasuk = [];
+                while ($masuk = mysqli_fetch_array($pemasukan)) {
+                  $arraymasuk[] = $masuk['jumlah'];
+                }
+                $jumlahmasuk = array_sum($arraymasuk);
 
-$pengeluaran=mysqli_query($koneksi,"SELECT * FROM pengeluaran");
-while ($keluar=mysqli_fetch_array($pengeluaran)){
-$arraykeluar[] = $keluar['jumlah'];
-}
-$jumlahkeluar = array_sum($arraykeluar);
+                $pengeluaran = mysqli_query($koneksi, "SELECT * FROM pengeluaran");
+                $arraykeluar = [];
+                while ($keluar = mysqli_fetch_array($pengeluaran)) {
+                  $arraykeluar[] = $keluar['jumlah'];
+                }
+                $jumlahkeluar = array_sum($arraykeluar);
 
 
-$query1 = mysqli_query($koneksi,"SELECT id_pemasukan FROM pemasukan");
-$query1 = mysqli_num_rows($query1);
+                $query1 = mysqli_query($koneksi, "SELECT id_pemasukan FROM pemasukan");
+                $query1 = mysqli_num_rows($query1);
 
-$query2 = mysqli_query($koneksi,"SELECT id_pengeluaran FROM pengeluaran");
-$query2 = mysqli_num_rows($query2);
-$no = 1;
-?>
-                    <tr>
-                      <td>Pemasukan</td>
-                      <td><?=$query1?></td>
-                      <td>Rp. <?=number_format($jumlahmasuk,2,',','.');?></td>
-					  <td>
+                $query2 = mysqli_query($koneksi, "SELECT id_pengeluaran FROM pengeluaran");
+                $query2 = mysqli_num_rows($query2);
+                $no = 1;
+                ?>
+                <tr>
+                  <td>Pemasukan</td>
+                  <td><?= $query1 ?></td>
+                  <td>Rp. <?= number_format($jumlahmasuk, 2, ',', '.'); ?></td>
+                  <td>
                     <!-- Button untuk modal -->
-<a href="export-pemasukan.php" type="button" class="btn btn-primary btn-md"><i class="fa fa-download"></i></a>
-</td>
-</tr>
+                    <a href="export-pemasukan.php" type="button" class="btn btn-primary btn-md"><i class="fa fa-download"></i></a>
+                  </td>
+                </tr>
 
-                    <tr>
-                      <td>Pengeluaran</td>
-                      <td><?=$query2?></td>
-                      <td>Rp. <?=number_format($jumlahkeluar,2,',','.');?></td>
-					  <td>
+                <tr>
+                  <td>Pengeluaran</td>
+                  <td><?= $query2 ?></td>
+                  <td>Rp. <?= number_format($jumlahkeluar, 2, ',', '.'); ?></td>
+                  <td>
                     <!-- Button untuk modal -->
-<a href="export-pengeluaran.php" type="button" class="btn btn-primary btn-md"><i class="fa fa-download"></i></a>
-</td>
-</tr>
+                    <a href="export-pengeluaran.php" type="button" class="btn btn-primary btn-md"><i class="fa fa-download"></i></a>
+                  </td>
+                </tr>
 
 
-                  </tbody>
-                </table>
-              </div>
-            </div>
+              </tbody>
+            </table>
           </div>
         </div>
-        <!-- /.container-fluid -->
-
       </div>
-      <!-- End of Main Content -->
-
-<?php require 'footer.php'?>
-
     </div>
-    <!-- End of Content Wrapper -->
+    <!-- /.container-fluid -->
+
+  </div>
+  <!-- End of Main Content -->
+
+  <?php require 'footer.php' ?>
+
+  </div>
+  <!-- End of Content Wrapper -->
 
   </div>
   <!-- End of Page Wrapper -->
@@ -124,7 +126,7 @@ $no = 1;
   </a>
 
   <!-- Logout Modal-->
-<?php require 'logout-modal.php';?>
+  <?php require 'logout-modal.php'; ?>
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
