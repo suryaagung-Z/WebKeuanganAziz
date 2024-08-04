@@ -1,0 +1,102 @@
+[2019-03-11:11:37:52] Nama Admin : saiful => Edit Hutang => 17 => Sukses 
+
+[2022-22-08:07:55:13] Nama Admin : Adam => Edit Pemasukan => 1 => Sukses Edit
+
+[2022-22-08:07:55:22] Nama Admin : Adam => Edit Pemasukan => 1 => Sukses Edit
+
+[2022-22-08:07:55:22] Nama Admin : Adam => Edit Pemasukan => 1 => Sukses Edit
+
+[2022-22-08:08:09:23] Nama Admin : Adam => Edit Pemasukan => 28 => Sukses Edit
+
+[2024-24-07:12:12:07] Nama Admin : Aziz => Edit Pemasukan => 15 => Sukses Edit
+
+[2024-24-07:12:50:12] Nama Admin : Aziz => Edit Pemasukan => 48 => Sukses Edit
+
+[2024-24-07:12:50:25] Nama Admin : Aziz => Edit Pemasukan => 48 => Sukses Edit
+
+[2024-24-07:13:11:00] Nama Admin : Aziz => Edit Hutang => 21 => Sukses 
+
+[2024-24-07:15:45:26] Nama Admin : Aziz => Edit Hutang => 22 => Sukses 
+
+[2024-24-07:15:45:36] Nama Admin : Aziz => Edit Hutang => 22 => Sukses 
+
+[2024-24-07:16:49:50] Nama Admin : Aziz => Edit hutang => 21 => Gagal
+
+[2024-24-07:16:50:40] Nama Admin : Aziz => Edit hutang => 21 => Gagal
+
+[2024-24-07:16:50:41] Nama Admin : Aziz => Edit hutang => 21 => Gagal
+
+[2024-24-07:16:52:22] Nama Admin : Aziz => Edit Hutang => 21 => Sukses 
+
+[2024-24-07:16:52:31] Nama Admin : Aziz => Edit Hutang => 22 => Sukses 
+
+[2024-24-07:17:07:50] Nama Admin : Aziz => Edit Hutang => 21 => Sukses 
+
+[2024-24-07:17:26:37] Nama Admin : Aziz => Edit hutang => 21 => Gagal
+
+[2024-24-07:17:27:11] Nama Admin : Aziz => Edit Hutang => 21 => Sukses 
+
+[2024-24-07:17:27:21] Nama Admin : Aziz => Edit Hutang => 21 => Sukses 
+
+[2024-25-07:13:41:13] Nama Admin : Aziz => Edit Pemasukan => 45 => Sukses Edit
+
+[2024-25-07:13:41:22] Nama Admin : Aziz => Edit Pemasukan => 45 => Sukses Edit
+
+[2024-25-07:13:41:32] Nama Admin : Aziz => Edit Pemasukan => 45 => Sukses Edit
+
+[2024-25-07:13:42:03] Nama Admin : Aziz => Edit Pemasukan => 46 => Sukses Edit
+
+[2024-25-07:13:42:22] Nama Admin : Aziz => Edit Pemasukan => 46 => Sukses Edit
+
+[2024-25-07:13:42:50] Nama Admin : Aziz => Edit Pemasukan => 46 => Sukses Edit
+
+[2024-25-07:13:47:36] Nama Admin : Aziz => Edit Pemasukan => 52 => Sukses Edit
+
+[2024-25-07:13:47:49] Nama Admin : Aziz => Edit Pemasukan => 52 => Sukses Edit
+
+[2024-25-07:13:55:50] Nama Admin : Aziz => Edit Hutang => 24 => Sukses 
+
+[2024-25-07:13:56:03] Nama Admin : Aziz => Edit Hutang => 25 => Sukses 
+
+[2024-25-07:13:58:03] Nama Admin : Aziz => Edit Hutang => 26 => Sukses 
+
+[2024-25-07:14:02:48] Nama Admin : Aziz => Edit Pemasukan => 46 => Sukses Edit
+
+[2024-25-07:14:24:01] Nama Admin : Aziz => Edit Pemasukan => 46 => Sukses Edit
+
+[2024-25-07:14:40:53] Nama Admin : Aziz => Edit Pemasukan => 46 => Sukses Edit
+
+[2024-25-07:14:41:04] Nama Admin : Aziz => Edit Pemasukan => 58 => Sukses Edit
+
+[2024-25-07:19:06:53] Nama Admin : Aziz => Edit Hutang => 26 => Sukses 
+
+[2024-25-07:19:07:29] Nama Admin : Aziz => Edit Pemasukan => 59 => Sukses Edit
+
+[2024-25-07:19:07:48] Nama Admin : Aziz => Edit Pemasukan => 58 => Sukses Edit
+
+[2024-27-07:07:34:19] Nama Admin : Freya => Edit Pemasukan => 49 => Sukses Edit
+
+[2024-27-07:09:48:18] Nama Admin : Freya => Edit Pemasukan => 50 => Sukses Edit
+
+[2024-29-07:14:41:11] Nama Admin : Aziz => Edit Pemasukan => 50 => Sukses Edit
+
+[2024-04-08:07:41:47] Nama Admin : Aziz => Edit Pemasukan => 50 => Sukses Edit
+
+[2024-04-08:07:54:23] Nama Admin : Aziz => Edit Pemasukan => 65 => Sukses Edit
+
+[2024-04-08:07:54:38] Nama Admin : Aziz => Edit Pemasukan => 65 => Sukses Edit
+
+[2024-04-08:08:05:51] Nama Admin : Aziz => Edit piutang => 27 => Sukses 
+
+[2024-04-08:08:06:00] Nama Admin : Aziz => Edit piutang => 28 => Sukses 
+
+[2024-04-08:08:40:07] Nama Admin : Aziz => Edit Pemasukan => 62 => Sukses Edit
+
+[2024-04-08:08:40:14] Nama Admin : Aziz => Edit Pemasukan => 51 => Sukses Edit
+
+[2024-04-08:08:40:45] Nama Admin : Aziz => Edit Pemasukan => 62 => Sukses Edit
+
+[2024-04-08:08:41:00] Nama Admin : Aziz => Edit Pemasukan => 62 => Sukses Edit
+
+[2024-04-08:08:59:08] Nama Admin : PEMILIK => Edit piutang => 27 => Sukses 
+
